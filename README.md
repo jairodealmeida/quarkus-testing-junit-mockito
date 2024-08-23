@@ -4,7 +4,7 @@ Simple project that shows you how to test a Quarkus application with Junit5, Moc
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
-If you want to learn more about Quarkus, please visit its website: https://quarkus.io/.
+If you want to learn more about Quarkus, please visit its website: <https://quarkus.io/>.
 
 ## Test the application
 
