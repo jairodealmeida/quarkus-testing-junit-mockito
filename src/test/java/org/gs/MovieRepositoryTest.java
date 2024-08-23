@@ -14,8 +14,19 @@ class MovieRepositoryTest {
   MovieRepository movieRepository;
 
   @Test
-  void findByCountryOK() {}
+  void findByCountryOK() {
+    List<Movie> movies = movieRepository.findByCountry("USA");
+    assertNotNull(movies);
+    assertFalse(movies.isEmpty());
+    assertEquals(3, movies.size());
+
+
+  }
 
   @Test
-  void findByCountryKO() {}
+  void findByCountryKO() {
+    List<Movie> movies = movieRepository.findByCountry("Spain");
+    assertNotNull(movies);
+    assertTrue(movies.isEmpty());
+  }
 }
